@@ -1,9 +1,6 @@
 <?php
 /*
 Template Name: infoband-sans-lien
-
-pour page landing page ( pas de top menu ) + bande de message si besoins
-
 */
 ?>
 
@@ -66,7 +63,7 @@ extract($fp_options);
 				 	// affiche le header sans lien	
 					 echo(do_shortcode('[vc_row type="in_container" full_screen_row_position="middle" scene_position="center" text_color="dark" text_align="left" overlay_strength="0.3" shape_divider_position="bottom"][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/6" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][image_with_animation image_url="16848" alignment="" animation="Fade In" border_radius="none" box_shadow="none" max_width="100%"][/vc_column][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="5/6" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][/vc_column][/vc_row]'));
 					 // affiche la barre d'info
-					 	echo(do_shortcode('[vc_row '.$disableElement.' type="full_width_content" full_screen_row_position="middle" bg_color="#2e89ea" scene_position="center" text_color="dark" text_align="left" id="top-message" overlay_strength="0.3" shape_divider_position="bottom" shape_type=""][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text ]<div class="info-bar" style="text-align: left;"><p style="text-align: center;">'.$message.'</p></div>[/vc_column_text][/vc_column][/vc_row]'));
+					 	echo(do_shortcode('[vc_row '.$disableElement.' type="full_width_content" full_screen_row_position="middle" bg_color="#2e89ea" scene_position="center" text_color="dark" text_align="left" id="top-message" overlay_strength="0.3" shape_divider_position="bottom" shape_type=""][vc_column column_padding="no-extra-padding" column_padding_position="all" background_color_opacity="1" background_hover_color_opacity="1" column_shadow="none" column_border_radius="none" width="1/1" tablet_text_alignment="default" phone_text_alignment="default" column_border_width="none" column_border_style="solid"][vc_column_text ]<div class="info" style="text-align: left;"><p style="text-align: center;">'.$message.'</p></div>[/vc_column_text][/vc_column][/vc_row]'));
 					 the_content(); 
 		
 				 endwhile; endif; 

@@ -1,5 +1,3 @@
-
-
 <?php 
 
 
@@ -19,6 +17,10 @@ function user_email_funct( $atts ){
 	return 'User email: ' . $current_user->user_email . '<br />';
 }
 add_shortcode( 'user_email', 'user_email_funct' );
+
+// include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
+
+include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
 
 
 /********** partie de création d'un utilisateur wordpress **********************/
@@ -98,7 +100,8 @@ function to_log_slack($postfields){
 	 $return = curl_exec($curl);
 
 	 curl_close($curl);
-	 return;
+	 return
+;
 }
 
 function to_log_abonnement($postfields){
@@ -214,19 +217,10 @@ add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 // pour enlever la barre d'admin
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
-    if (!current_user_can('administrator') && !is_admin()) {
-      show_admin_bar(false);
-    }
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
 }
 
-// pour ajouter les pages privés au menu
-add_filter( 'nav_menu_meta_box_object', 'show_private_pages_menu_selection' );
-/**
-* Add query argument for selecting pages to add to a menu
-*/
-function show_private_pages_menu_selection( $args ){
-    if( $args->name == 'page' ) {
-        $args->_default_query['post_status'] = array('publish','private');
-    }
-    return $args;
-}
+
+?>
