@@ -1,0 +1,49 @@
+#header-outer {
+
+    display: none!important;
+
+}
+
+h1,h3,h4,h5{
+    color: #FFFFFF !important;
+    
+}
+
+.wpb_row, .wpb_content_element, ul.wpb_thumbnails-fluid > li, .last_toggle_el_margin, .wpb_button {
+    margin-bottom: 2px;
+}
+
+.iwithtext{
+    color: black !important;
+    font-size: 19px !important;
+    line-height : 25px !important;
+
+}
+.espace{
+    padding-top : 20px;
+
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    color: black !important;
+}
+
+.orange{
+    color: #FF7400 !important;
+}
+.cta{
+ text-align: center;
+}
+
+
+.wpb_row, .wpb_content_element, ul.wpb_thumbnails-fluid > li, .last_toggle_el_margin, .wpb_button {
+    margin-bottom: 0px !important;
+}
+
+.preuve-sociale{
+    padding-top : 1% !important;
+}	
+
+.sous-titre{
+    padding-bottom : 5% !important;
+}	

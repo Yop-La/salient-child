@@ -1,0 +1,11 @@
+
+/* les boutons de validation */
+input[value="Submit"]{
+    background-color: #81d742 !important;
+    padding : 15px 20px 15px 20px  !important;
+    font-size : 18px !important;
+}
+
+#texteTable td{
+    white-space: pre-line;
+}

@@ -1,0 +1,32 @@
+{
+"h1": "Aide aux devoirs par messagerie gratuite",
+"h2" : "Un prof en ligne est prêt",
+"avantage1" : "Un prof de maths <strong class='orange'>disponible maintenant</strong>.",
+"avantage2" : "<strong class='orange'>Correction de tes exercices à la main</strong>, réponses à tes questions, <strong class='orange'>débloquage</strong>, explications détaillées : tout est possible !",
+"avantage3" : "Tous les échanges se font par <strong class='orange'>messages</strong>. C'est gratuit et tu peux envoyer <strong class='orange'>des photos de ton travail </strong> pour correction.",
+
+
+
+
+
+"regle-calcul-puissance":[ "à t'aider maintenant sur les règles pour calculer des puissances", " Demande lui de l'aide sur les règles de calcul des puissances", "" ],
+"exercice-racine-carree":[ "à te donner des exercices sur les racines carrées", "Demande lui des exercices sur les racines carrées", "" ],
+"mathou-matheux":[ "à t'aider maintenant en maths", "Demande lui de l'aide en maths", "" ],
+"formule-exponentielle":[ "à t'aider maintenant sur les formules exponentielles", "Demande lui de l'aide sur les formules exponentielles.", "" ],
+"correction-maths":[ "à corriger à la main ton travail maintenant", "Demande lui de corriger à la main tes exercices de maths.", "" ],
+"correction-maths-seconde":[ "à faire la correction de ton travail à la main maintenant", "Demande lui des corrections à la main de tes exercices de maths.", "" ],
+"corrige-maths-seconde":[ "à faire le corrigé de ton travail à la main maintenant", "Demande lui des corrigés faits main de tes exercices de seconde.", "" ],
+"aide-maths-seconde":[ "à te donner de l'aide en maths", "Demande lui de  l'aide sur ton travail de seconde.", "" ],
+"revision-maths-seconde":[ "à te faire réviser tes maths de seconde", "Demande lui des cours de maths.", "" ],
+"cours-maths-seconde":[ "à te donner des cours de maths niveau seconde", "Demande lui des cours de maths.", "" ],
+
+
+
+"reciproque-thales":[ "à t'aider maintenant sur la réciproque de Thalès", "Demande lui de l'aide sur la réciproque de Thalès.", "" ]
+
+
+
+
+
+}
+
