@@ -20,10 +20,6 @@ function user_email_funct( $atts ){
 }
 add_shortcode( 'user_email', 'user_email_funct' );
 
-// include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
-
-include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
-
 
 /********** partie de création d'un utilisateur wordpress **********************/
 
