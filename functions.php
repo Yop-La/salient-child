@@ -214,9 +214,9 @@ add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
 // pour enlever la barre d'admin
 add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
-}
+    if (!current_user_can('administrator') && !is_admin()) {
+      show_admin_bar(false);
+    }
 }
 
 // pour ajouter les pages privés au menu
