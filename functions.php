@@ -204,23 +204,5 @@ function my_change_nf_default_value( $default_value, $field_type, $field_setting
 }
 
 
-/* ------- partie pour rediriger les abonnées vers leur dashboard  ----------- */
-function acme_login_redirect( $redirect_to, $request, $user  ) {
-	return ( is_array( $user->roles ) && in_array( 'administrator', $user->roles ) ) ? admin_url() : site_url();
-}
-add_filter( 'login_redirect', 'acme_login_redirect', 10, 3 );
-
-
-
-
-
-// pour enlever la barre d'admin
-add_action('after_setup_theme', 'remove_admin_bar');
-function remove_admin_bar() {
-if (!current_user_can('administrator') && !is_admin()) {
-  show_admin_bar(false);
-}
-}
-
 
 ?>
