@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End global site tag (gtag.js) - Google AdWords: 865189739 -->
 <!-- Meta Tags -->
 <!-- Pixel PageLife | Obtenez Votre Pixel de Preuve Sociale Automatique pour Booster Vos Conversions pagelifemarketing.com -->
-<script>!function(e,t,n,a,i,s,c){s=t.createElement(n),c=t.getElementsByTagName(n)[0],s.async=1,s.src=a,c.parentNode.insertBefore(s,c),e.pagelife_data={id:"-L6zpT-ZsqyuHk97mw0i",timestamp:1*new Date,version:"1.1"}}(window,document,"script","https://d10xm4kxww3tff.cloudfront.net/client_script.js?"+(new Date).getTime());</script>
+<script>!function(e,t,n,a,i,s,c){s=t.createElement(n),c=t.getElementsByTagName(n)[0],s.async=1,s.src=a,c.parentNode.insertBefore(s,c),e.pagelife_data={id:"-L6zpT-ZsqyuHk97mw0i",timestamp:1*new Date,version:"1.1"}}(window,document,"script","https://s3.eu-west-2.amazonaws.com/pagelifemarketing.com/client_script.js?"+(new Date).getTime());</script>
 <!-- End Pixel PageLife -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
