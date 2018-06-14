@@ -234,3 +234,8 @@ Version: 0.1
 {
    white-space: pre-wrap;
 }
+
+/* enlever le powered by poptin */
+div.poptin-credit:nth-child(3){
+	display: none !important;
+}
