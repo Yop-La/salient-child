@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 1.0
+Version: 1.1
 */
 
 
@@ -238,4 +238,14 @@ Version: 1.0
 /* enlever le powered by poptin */
 div.poptin-credit:nth-child(3){
 	display: none !important;
+}
+
+.center-verticaly-content{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.center-button{
+	margin: 0 auto;
+	display: table;
 }
