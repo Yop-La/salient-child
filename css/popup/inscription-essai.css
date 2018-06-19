@@ -1,0 +1,76 @@
+/* début css popup */
+
+
+.nf-breadcrumb{
+	padding : 10px;
+	background-color : #000000;
+	border-radius : 4px;
+	color : white;
+}
+
+.nf-breadcrumb:hover{
+	padding : 12px;
+	background-color : #000000;
+	border-radius : 4px;
+	color : white;
+}
+
+.active > .nf-breadcrumb{
+	padding : 10px;
+	background-color : #FF7400;
+	border-radius : 4px;
+}
+
+.active > .nf-breadcrumb:hover{
+	padding : 12px;
+	background-color : #FF7400;
+	border-radius : 4px;
+	color : white;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:     #666666 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:     #666666 !important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:     #666666 !important;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:     #666666 !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:     #666666 !important;
+}
+
+/*pour le style des chmaps du formulaire */
+
+.nf-form-content .nf-field-element .ninja-forms-field:not(.valider) {
+    border: solid 1px #eeeeee !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+}
+
+.valider{
+	background-color: #81d742 !important;
+	padding : 30px  !important;
+	font-size : 20px !important;
+}
+.nf-form-cont{
+  /* border: none !important;*/
+    border-radius: 10px !important;
+    background-color: #fafafa !important;
+}
+
+.nf-next, .nf-previous{
+	padding : 10px 20px 10px 20px !important;
+	background-color : #81d742 !important;
+	color : white !important;
+	    font-size : 20px !important;
+    line-height : 22px!important;
+}
+
+/* fin css popup */
