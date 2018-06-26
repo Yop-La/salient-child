@@ -127,36 +127,6 @@ function to_log_abonnement($postfields){
 }
 
 
-/* ---------- partie de contrôle des emails sur les formulaires d'inscriptions à l'essai publiques --------- */ 
-
-// chargement du script js de validation de l'inscription à la semaine d'essai
-add_action('wp_enqueue_scripts', 'add_validation_inscription_essai_js');
-
-function add_validation_inscription_essai_js() {
-
-	if(is_page('test-form-inscription-essai')){
-		echo('scrit chargé');
-		wp_enqueue_script( 'validation_form_essai_script', get_stylesheet_directory_uri() . '/js/validation_form_essai_script.js', array('nf-front-end'));
-
-		// pass Ajax Url to script.js
-		wp_localize_script('validation_form_essai_script', 'ajaxurl', admin_url( 'admin-ajax.php' ) );
-	}
-}
-
-
-// on ajoute l'action à exécuter par l'appel ajax
-
-function validateInscriptionEssai() {
-
-    include_once(get_home_path(). '/wp-content/themes/salient-child/ajax/validerInscriptionEssaiAjax.php');
-    die();
-}
-
-
-add_action( 'wp_ajax_validateInscriptionEssai', 'validateInscriptionEssai' );
-add_action( 'wp_ajax_nopriv_validateInscriptionEssai', 'validateInscriptionEssai' );
-
-
 /* ------   script choix tarifs ------- */
 
 add_action('wp_enqueue_scripts', 'add_tarifs_js');
