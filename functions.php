@@ -12,11 +12,11 @@ if ( is_rtl() )
 
 /* shortcode perso */
 
-function user_email_funct( $atts ){
+function user_name_funct( $atts ){
 	$current_user = wp_get_current_user();
-	return 'User email: ' . $current_user->user_email . '<br />';
+	return $current_user->user_firstname  . '<br />';
 }
-add_shortcode( 'user_email', 'user_email_funct' );
+add_shortcode( 'user_name', 'user_name_funct' );
 
 // include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
 
@@ -139,22 +139,13 @@ function add_tarifs_js() {
     }
 }
 
+/* ------   fin script choix tarifs ------- */
 
 
 
 
 
-/* ---------- fin partie de contrÃ´le des emails sur les formulaires d'inscriptions Ã  l'essai publiques --------- */
-
-
-
-/* ---------- partie preremplissage d'un formulaire pour lui passer l'id de l'utilisateur wordpress */
-
-
-
-
-
-/* ----------- partie pour prÃ©mremplir le formulaire avec l'idenfiant user wordpress -------------   */
+/* ----------- partie pour pré-remplir le formulaire avec l'idenfiant user wordpress -------------   */
 
 add_filter( 'ninja_forms_render_default_value', 'my_change_nf_default_value', 10, 3 );
 function my_change_nf_default_value( $default_value, $field_type, $field_settings ) {
@@ -172,6 +163,28 @@ function my_change_nf_default_value( $default_value, $field_type, $field_setting
    }
   return $default_value;
 }
+
+/* pour activer shortcode dans menu */
+
+add_filter('wp_nav_menu_items', 'do_shortcode');
+
+/* enlever barre d'admin sauf pour admin*/
+
+add_action('after_setup_theme', 'remove_admin_bar');
+
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+
+// /* pour faire un reset des rôles et capacités  */
+
+// if ( !function_exists( 'populate_roles' ) ) {
+//     require_once( ABSPATH . 'wp-admin/includes/schema.php' );
+// }
+
+// populate_roles();
 
 
 

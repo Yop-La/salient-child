@@ -28,12 +28,22 @@ extract($fp_options);
 			 if($page_full_screen_rows == 'on') echo '<div id="nectar_fullscreen_rows" data-animation="'.$page_full_screen_rows_animation.'" data-row-bg-animation="'.$page_full_screen_rows_bg_img_animation.'" data-animation-speed="'.$page_full_screen_rows_animation_speed.'" data-content-overflow="'.$page_full_screen_rows_content_overflow.'" data-mobile-disable="'.$page_full_screen_rows_mobile_disable.'" data-dot-navigation="'.$page_full_screen_rows_dot_navigation.'" data-footer="'.$page_full_screen_rows_footer.'" data-anchors="'.$page_full_screen_rows_anchors.'">';
 
 				 if(have_posts()) : while(have_posts()) : the_post(); 
-					
-			
-
+				 
+				 // le formulaire permettant de faire une redirection avec post
+				 $hiddenForm = '
+				 	<form id="hidden-form" method=POST action="'.get_home_url().'/">
+				 		<input type="hidden" id="info" name="info" value="" />
+				 	</form>
+			     
+				 	';
+				 echo($hiddenForm);
+				 
 				 	$message = "Hello :) ";
 				 	$hideInfoBar = 'hide'; 
-				 	if(array_key_exists("info",$_POST) and $_POST["info"] != ""){
+
+				 	
+				 	
+				 	if(array_key_exists("info",$_POST) && $_POST["info"] != ""){
 				 		$hideInfoBar = '';
 				 		$message = $_POST['info'];
 				 	}
