@@ -54,6 +54,10 @@
     font-size: 14px !important;
 }
 
+.nf-field-element{
+	background-color: #fafafa !important;
+}
+
 .valider{
 	background-color: #81d742 !important;
 	padding : 30px  !important;

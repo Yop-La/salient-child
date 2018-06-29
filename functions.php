@@ -18,6 +18,14 @@ function user_name_funct( $atts ){
 }
 add_shortcode( 'user_name', 'user_name_funct' );
 
+function ajax_spinner_funct( $atts ){
+
+    return '<div id="fountainTextG" ><div id="fountainTextG_1" class="fountainTextG">C</div><div id="fountainTextG_2" class="fountainTextG">h</div><div id="fountainTextG_3" class="fountainTextG">a</div><div id="fountainTextG_4" class="fountainTextG">r</div><div id="fountainTextG_5" class="fountainTextG">g</div><div id="fountainTextG_6" class="fountainTextG">e</div><div id="fountainTextG_7" class="fountainTextG">m</div><div id="fountainTextG_8" class="fountainTextG">e</div><div id="fountainTextG_9" class="fountainTextG">n</div><div id="fountainTextG_10" class="fountainTextG">t</div><div id="fountainTextG_11" class="fountainTextG"> </div><div id="fountainTextG_12" class="fountainTextG">.</div><div id="fountainTextG_13" class="fountainTextG">.</div><div id="fountainTextG_14" class="fountainTextG">.</div></div>';
+}
+add_shortcode('ajax_spinner', 'ajax_spinner_funct' );
+
+
+
 // include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
 
 include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
@@ -185,6 +193,17 @@ function remove_admin_bar() {
 // }
 
 // populate_roles();
+
+/* pour pouvoir exécuter du php dans les widgets */
+
+function php_execute($html){
+    if(strpos($html,"<"."?php")!==false){ ob_start(); eval("?".">".$html);
+    $html=ob_get_contents();
+    ob_end_clean();
+    }
+    return $html;
+}
+add_filter('widget_text','php_execute',100);
 
 
 
