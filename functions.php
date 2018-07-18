@@ -1,6 +1,7 @@
 <?php 
 
 
+
 add_action( 'wp_enqueue_scripts', 'salient_child_enqueue_styles');
 function salient_child_enqueue_styles() {
 	
@@ -28,7 +29,7 @@ add_shortcode('ajax_spinner', 'ajax_spinner_funct' );
 
 // include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
 
-include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
+// include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
 
 
 /********** partie de création d'un utilisateur wordpress **********************/

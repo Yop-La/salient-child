@@ -12,13 +12,13 @@
  *
  */
 
-add_action('wp_enqueue_scripts', 'handleScriptAndTestModeOnPage');
-function handleScriptAndTestModeOnPage()
-{
-    global $post;
-    $pageSlug = $post->post_name;
-    $PageManager = new \spamtonprof\stp_api\PageManager($pageSlug);
-}
+// add_action('wp_enqueue_scripts', 'handleScriptAndTestModeOnPage');
+// function handleScriptAndTestModeOnPage()
+// {
+//     global $post;
+//     $pageSlug = $post->post_name;
+//     $PageManager = new \spamtonprof\stp_api\PageManager($pageSlug);
+// }
 
 
 
