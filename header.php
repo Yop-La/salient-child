@@ -3,6 +3,7 @@
 
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+<meta name="google-site-verification" content="kt1lzLe3k5rNUR5wyjwgSiLnn_Y2uYbTgqZWGWllB2A" />
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

@@ -46,6 +46,7 @@ extract($fp_options);
 				 	if(array_key_exists("info",$_POST) && $_POST["info"] != ""){
 				 		$hideInfoBar = '';
 				 		$message = $_POST['info'];
+				 		$message = stripslashes($message);
 				 	}
 
 					 // affiche la barre d'info
