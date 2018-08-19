@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 1.4
+Version: 1.5
 */
 
 
@@ -239,7 +239,7 @@ Version: 1.4
 div.poptin-credit:nth-child(3){
 	display: none !important;
 }
-
+/* bien penser à cocher l'option colonne de même hauteur */
 .center-verticaly-content{
   display: flex !important;
   align-items: center !important;
@@ -249,3 +249,18 @@ div.poptin-credit:nth-child(3){
 	margin: 0 auto;
 	display: table;
 }
+
+.center-nf-button{
+	display: block !important;
+	margin: auto !important;
+	
+}
+
+.list-stp .nectar-fancy-ul ul li {
+
+    padding-bottom: 10px !important;
+    font-size: 18px !important;
+}
+
+
+
