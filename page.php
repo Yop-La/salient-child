@@ -56,6 +56,7 @@ if (have_posts()) :
         if (array_key_exists("message", $_SESSION) && $_SESSION["message"] != "") {
             $hideInfoBar = '';
             $message = $_SESSION['message'];
+            unset($_SESSION['message']);
             $message = stripslashes($message);
         }
         
