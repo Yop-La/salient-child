@@ -135,25 +135,6 @@ function to_log_abonnement($postfields){
 ;
 }
 
-
-/* ------   script choix tarifs ------- */
-
-add_action('wp_enqueue_scripts', 'add_tarifs_js');
-
-function add_tarifs_js() {
-
-    if(is_page('tarifs')){
-
-        wp_enqueue_script( 'script_choix_tarif', get_stylesheet_directory_uri() . '/js/tarifs.js', array( 'jquery' ), '1.0.0', true );
-    }
-}
-
-/* ------   fin script choix tarifs ------- */
-
-
-
-
-
 /* ----------- partie pour pré-remplir le formulaire avec l'idenfiant user wordpress -------------   */
 
 add_filter( 'ninja_forms_render_default_value', 'my_change_nf_default_value', 10, 3 );
