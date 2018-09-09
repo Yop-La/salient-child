@@ -65,3 +65,11 @@ em{
 #sbx-icon-search-13{
     display: none;
 }
+
+/* pour mettre en surbrillance */
+em{
+	font-style: normal;
+	font-weight: bold;
+	color: #00aeff;
+	background-color: #b3e7ff;
+}

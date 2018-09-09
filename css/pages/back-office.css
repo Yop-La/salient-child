@@ -57,3 +57,9 @@ em{
 	color: #00aeff;
 	background-color: #b3e7ff;
 }
+
+/* barre de recherche */
+
+#sbx-icon-search-13{
+    display: none;
+}
