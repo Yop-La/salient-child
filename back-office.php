@@ -1,11 +1,6 @@
 <?php 
 /*template name: back-office*/
 ?>
-<?php 
-
-wp_enqueue_style('landing', get_stylesheet_directory_uri().'/css/pages/back-office.css','','0.10'); 
-
-?>
 
 <?php 
 

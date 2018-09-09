@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 1.7
+Version: 1.8
 */
 .info-bar {
 	color: white !important;
@@ -262,81 +262,43 @@ div.poptin-credit:nth-child(3) {
 	transform: translate(-50%, -50%);
 }
 
-/* pour beau select */
 
-/* Reset Select */
-.beautiful-select select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	outline: 0;
-	box-shadow: none;
-	border: 0 !important;
-	background: #f39c12;
-	background-image: none;
+/* customize select */
+
+
+.select2-selection--single{
+
+	height: 50px !important;
+	padding: 10px 5px !important;
+	line-height: 30px !important;
+	background: orange !important;
+	border: none !important;
+		
+}
+
+.select2-container{
+	margin: 0 auto !important;
+	display: table !important;
+}
+
+.select2-selection__arrow{
+	height: 50px !important;
+	margin-right: 20px !important;
+}
+
+/* texte affiché après sélection */
+.select2-selection__placeholder, .select2-selection__rendered{
+	color: white !important;
 	font-size: 17px !important;
 }
-/* Custom Select */
-.beautiful-select .select {
-	position: relative;
-	display: block;
-	width: 22em;
-	height: 3em;
-	line-height: 3;
-	overflow: hidden;
-	border-radius: .25em;
+
+.select2-selection__arrow b{
+	border-color: white transparent transparent transparent !important;
+	border-style: solid !important;
+	border-width: 8px 6px 0 6px !important;
 }
 
-.beautiful-select select {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0 0 0 .5em;
-	color: #fff;
-	cursor: pointer;
-	
+.red-border{
+	border: red 3px solid !important
 }
 
-.beautiful-select select::-ms-expand {
-	display: none;
-}
-/* Arrow */
-.beautiful-select .select::after {
-	content: '\25BC';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0 1em;
-	background: #f39c12;
-	font-size: 17px !important;
-	margin-left: 25px !important;
-	padding-left: 25px !important;
-	border: 2px black solid;
-	pointer-events: none;
-	border-right: 3px black solid !important;
-}
-/* Transition */
-.beautiful-select .select:hover::after {
-	content: '\25BC';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0 1em;
-	background: #f39c12;
-	font-size: 17px !important;
-	margin-left: 25px !important;
-	padding-left: 25px !important;
-	border: 2px black solid;
-	pointer-events: none;
-}
-
-.beautiful-select .select::after {
-	-webkit-transition: .25s all ease;
-	-o-transition: .25s all ease;
-	transition: .25s all ease;
-}
-
-/* fin beau select */

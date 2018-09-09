@@ -57,3 +57,11 @@ em{
 	color: #00aeff;
 	background-color: #b3e7ff;
 }
+
+/* pour enlever la loupe de recherche */
+
+/* barre de recherche */
+
+#sbx-icon-search-13{
+    display: none;
+}
