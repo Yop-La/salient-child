@@ -73,3 +73,38 @@ em{
 	color: #00aeff;
 	background-color: #b3e7ff;
 }
+
+/* pour les bouttons de mise à jour dans le back office */
+span.update_button{
+	background-color: #81d742;
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.update_button:hover{
+	padding: 6px;
+	margin: 7px;
+}
+
+/* pour le contenu editable */
+[contenteditable="true"]:hover, [contenteditable="true"]:focus{
+	background-color: white !important;
+	padding: 2px;
+}
+
+[contenteditable="true"].single-line {
+    white-space: nowrap;
+    width:200px;
+    overflow: hidden;
+} 
+[contenteditable="true"].single-line br {
+    display:none;
+
+}
+[contenteditable="true"].single-line * {
+    display:inline;
+    white-space:nowrap;
+}
