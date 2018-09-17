@@ -1,0 +1,49 @@
+
+.item1 { grid-area: header; }
+.item2 { grid-area: formule; }
+.item3 { grid-area: space; }
+.item4 { grid-area: space1; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'space space header header space1 space1'
+    'space  space formule formule space1  space1';
+  grid-gap: 10px;
+  background-color: #f39c12;
+  padding: 10px;
+  margin: 15px 15px 15px 15px !important;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid-title{
+  font-size: 20px;
+  line-height: 28px;	
+  font-weight: 900;
+}
+
+.grid-subtitle{
+  font-size: 17px;
+  line-height: 25px;	
+  font-weight: 500 !important;	
+}
+
+/* pour mettre en surbrillance */
+em{
+	font-style: normal;
+	font-weight: bold;
+	color: #00aeff;
+	background-color: #b3e7ff;
+}
+
+/* barre de recherche */
+
+#sbx-icon-search-13{
+    display: none;
+}

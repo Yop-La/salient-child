@@ -1,0 +1,47 @@
+
+.item1 { grid-area: col1; }
+.item2 { grid-area: col2; }
+.item3 { grid-area: col3; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'col1 col1 col2 col2 col3 col3';
+  grid-gap: 10px;
+  background-color: #f39c12;
+  padding: 10px;
+  margin: 15px 15px 15px 15px !important;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid-title{
+  font-size: 20px;
+  line-height: 28px;	
+  font-weight: 900;
+}
+
+.grid-subtitle{
+  font-size: 17px;
+  line-height: 25px;	
+  font-weight: 500 !important;	
+}
+
+/* pour mettre en surbrillance */
+em{
+	font-style: normal;
+	font-weight: bold;
+	color: #00aeff;
+	background-color: #b3e7ff;
+}
+
+/* barre de recherche */
+
+#sbx-icon-search-13{
+    display: none;
+}
