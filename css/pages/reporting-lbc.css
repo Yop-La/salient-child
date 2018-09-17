@@ -2,11 +2,13 @@
 .item1 { grid-area: col1; }
 .item2 { grid-area: col2; }
 .item3 { grid-area: col3; }
+.item4 { grid-area: col4; }
+.item5 { grid-area: col5; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'col1 col1 col2 col2 col3 col3';
+    'col1 col1 col2 col3 col4 col5';
   grid-gap: 10px;
   background-color: #f39c12;
   padding: 10px;
