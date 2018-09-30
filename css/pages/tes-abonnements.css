@@ -1,0 +1,105 @@
+.item1 {
+	grid-area: cell1;
+}
+
+.item2 {
+	grid-area: cell2;
+}
+
+.trialing, .past_due, .canceled, .unpaid{
+	color:red;
+}
+
+
+.item3 {
+	grid-area: cell3;
+}
+
+.item4 {
+	grid-area: cell4;
+}
+
+.item5 {
+	grid-area: cell5;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-areas: 'cell1 cell1 cell2 cell3 cell4 cell5';
+	grid-gap: 10px;
+	background-color: #f39c12;
+	padding: 10px;
+	margin: 15px 15px 15px 15px !important;
+}
+
+.grid-container>div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.grid-title {
+	font-size: 20px;
+	margin: 5px;
+	line-height: 28px;
+	font-weight: 900;
+}
+
+.grid-subtitle {
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: 500 !important;
+}
+
+/* pour mettre en surbrillance */
+em {
+	font-style: normal;
+	font-weight: bold;
+	color: #00aeff;
+	background-color: #b3e7ff;
+}
+
+/* barre de recherche */
+#sbx-icon-search-13 {
+	display: none;
+}
+
+/* pour les bouttons de mise à jour dans le back office */
+span.update_button {
+	background-color: #81d742;
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	font-size: 14px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.update_button:hover {
+	padding: 6px;
+	margin: 7px;
+}
+
+/* pour le contenu editable */
+[contenteditable="true"]:hover, [contenteditable="true"]:focus {
+	background-color: white !important;
+	padding: 2px;
+}
+
+[contenteditable="true"].single-line {
+	white-space: nowrap;
+	width: 200px;
+	overflow: hidden;
+}
+
+[contenteditable="true"].single-line br {
+	display: none;
+}
+
+[contenteditable="true"].single-line * {
+	display: inline;
+	white-space: nowrap;
+}
