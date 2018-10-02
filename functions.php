@@ -27,91 +27,11 @@ add_shortcode('ajax_spinner', 'ajax_spinner_funct' );
 
 
 
-// include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai.php');
-
-// include_once(get_stylesheet_directory() . '/functions-library/paiement-apres-essai-complet.php');
-
-
-/********** partie de création d'un utilisateur wordpress **********************/
-
-// action déclenché par la soumission du formulaire (à ajouter au formulaire)
-// add_action( 'my_ninja_forms_processing', 'save_new_wordpress_user' ); ------------------ à décommenter pour utiilsation future 
-
-function save_new_wordpress_user( $form_data ){
-    $form_id       = $form_data[ 'id' ];
-    $form_fields   =  $form_data[ 'fields' ];
-    foreach( $form_fields as $field ){
-        $field_id    = $field[ 'id' ];
-        $field_key   = $field[ 'key' ];
-        $field_value = $field[ 'value' ];
-        
-        
-        if( $field_id == 739 ){ //si adresse mail eleve
-        	$userdata = array(
-        	    'user_email'    =>  $field_value,
-        	    'user_pass'   =>  wp_generate_password(),
-        	    'user_login' => $field_value,
-        	    'role' => 'subscriber'
-        	);
-
-        	$user_id = wp_insert_user( $userdata ) ;
-
-				//On success
-				if (is_wp_error( $user_id ) ) {
-
-					 $postfields = array(
-
-						'email' => $field_value,
-						'error' => $user_id ->get_error_message()
-
-
-					 );
-					 to_log_slack($postfields);
-
-        	}else{
-        		 $postfields = array(
-
-        			'email' => $field_value,
-        			'valid' => "ok"
-
-
-        		 );
-        		 to_log_slack($postfields);
-        	}
-        }
-        if( $field_id == 753 ){ //si adresse mail parent
-
-        }
-    }
-    $form_settings = $form_data[ 'settings' ];
-    $form_title    = $form_data[ 'settings' ][ 'title' ];
-}
 
 
 
-/* ---------- pour envoyer notif dans log sur slack -----------  */
-
-function to_log_slack($postfields){
-	 $lien = 'https://hooks.zapier.com/hooks/catch/2126142/zu757i/';
 
 
-
-	 $curl = curl_init();
-
-
-	 curl_setopt($curl, CURLOPT_URL, $lien);
-	 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-	 curl_setopt($curl, CURLOPT_POST, true);
-
-	 curl_setopt($curl, CURLOPT_POSTFIELDS, $postfields);
-
-
-	 $return = curl_exec($curl);
-
-	 curl_close($curl);
-	 return
-;
-}
 
 function to_log_abonnement($postfields){
      $lien = 'https://hooks.zapier.com/hooks/catch/2126142/fb99bx/';
