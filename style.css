@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 1.9.7
+Version: 1.9.8
 */
 .info-bar {
 	color: white !important;
@@ -318,3 +318,10 @@ div.poptin-credit:nth-child(3) {
 	padding-bottom: 17px !important;
 }
 
+.nf-form-fields-required {
+  display: none !important;
+}
+
+.nf-field-container{
+	margin-bottom: 0px !important;
+}
