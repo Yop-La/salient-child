@@ -6,8 +6,43 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 1.9.8
+Version: 1.9.9
 */
+
+
+
+/* pour la faq */
+div.toggle.default>h3>a {
+	background-color: white !important;
+	color: #3452FF !important;
+	padding: 9px 1px 0px 43px;
+}
+
+.toggle {
+	margin-bottom: 0px !important;
+}
+
+div.toggle.default>h3>a>i {
+	color: #3452FF !important;
+}
+
+div[data-style="default"] .toggle h3 a, div[data-style="default"] .toggle h3
+	{
+	font-size: 20px !important;
+	line-height: 35px !important;
+}
+
+.info-bar {
+	color: white !important;
+	font-size: 18px !important;
+	font-weight: 500 !important;
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-bottom: 1% !important;
+}
+
+/* fin faq */
+
 .info-bar {
 	color: white !important;
 	font-size: 18px !important;
@@ -233,7 +268,7 @@ Version: 1.9.8
 div.poptin-credit:nth-child(3) {
 	display: none !important;
 }
-/* bien penser à cocher l'option colonne de même hauteur */
+/* bien penser ï¿½ cocher l'option colonne de mï¿½me hauteur */
 .center-verticaly-content {
 	display: flex !important;
 	align-items: center !important;
@@ -280,7 +315,7 @@ div.poptin-credit:nth-child(3) {
 	margin-right: 20px !important;
 }
 
-/* texte affiché après sélection */
+/* texte affichï¿½ aprï¿½s sï¿½lection */
 .select2-selection__placeholder, .select2-selection__rendered {
 	color: white !important;
 	font-size: 17px !important;
