@@ -51,7 +51,7 @@ h3 div {
 }
 
 #formula_1 .pricing-column {
-	width: 40% !important;
+	width: 40%;
 	display: table !important;
 	margin: 0 auto !important;
 	float: none !important;
