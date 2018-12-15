@@ -236,6 +236,10 @@ div.nectar-icon-list-item>div {
 	line-height: 25px;
 }
 
+.nf-field-element{
+	padding: 1% !important;
+}
+
 #no_res{
 	z-index: 0 !important;
 	margin-bottom: 4% !important;
