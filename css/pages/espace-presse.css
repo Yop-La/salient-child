@@ -1,0 +1,40 @@
+#espace-presse-h1{
+	
+}
+#description-para{
+	font-size: 18px !important;
+	line-height: 20px !important;
+	text-align: center
+}
+
+#actu_h2{
+	
+}
+
+#actu_ul  {
+	
+	
+}
+
+li{
+	margin-top: 5px !important;
+	font-size: 18px !important;
+	line-height: 20px !important;	
+}
+
+#revue_h2{
+	
+}
+
+#revue_ul{
+	
+}
+
+#contact_p{
+	font-size: 17px !important;
+	line-height: 18px !important;	
+}
+
+.img_ressource{
+	width: 200px !important;
+}
