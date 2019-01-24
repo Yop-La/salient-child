@@ -191,10 +191,15 @@ div.nectar-icon-list-item>div {
 .mobile-search-bar .iwithtext {
 	display: table;
 	margin: auto;
-	padding-right: 3% !important;
+	padding-right: 15px !important;
 	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 	color: #6d6d6d !important;
+}
+
+.orange-border {
+	border: #ff7400 3px dashed;
+	border-radius: 5px !important;
 }
 
 .mobile-search-bar .iwt-text {
@@ -203,6 +208,10 @@ div.nectar-icon-list-item>div {
 	line-height: 20px;
 	padding-top: 7% !important;
 	padding-bottom: 7% !important;
+}
+
+.iwithtext .iwt-text {
+	padding-left: 15px !important;
 }
 
 .mobile-search-bar .iwt-icon {
@@ -236,11 +245,11 @@ div.nectar-icon-list-item>div {
 	line-height: 25px;
 }
 
-.nf-field-element{
+.nf-field-element {
 	padding: 1% !important;
 }
 
-#no_res{
+#no_res {
 	z-index: 0 !important;
 	margin-bottom: 4% !important;
 	font-size: 19px !important;
@@ -255,4 +264,3 @@ div.nectar-icon-list-item>div {
 .nb_formule {
 	color: rgb(243, 156, 18) !important;
 }
-
