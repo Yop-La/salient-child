@@ -6,10 +6,15 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 2.0.5
+Version: 2.0.6
 */
 
-
+.link_msg{
+	
+	color: white !important;
+	text-decoration: underline;
+	
+}
 
 /* pour la faq */
 div.toggle.default>h3>a {
