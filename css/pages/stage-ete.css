@@ -1,0 +1,73 @@
+h1{
+
+	padding-top: 3% !important;
+	font-size: 54px !important;
+	font-weight: 800 !important;
+	line-height: 64px !important
+}
+
+h2{
+	font-size: 44px !important;
+	font-weight: 600 !important;
+	line-height: 54px !important
+}
+
+h3{
+	font-size: 34px !important;
+	font-weight: 600 !important;
+	line-height: 44px !important;
+}
+
+h4{
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 34px !important;
+}
+
+.front-text{
+	font-size: 20px !important;
+	font-weight: 300 !important;
+	line-height: 30px !important;
+}
+
+.price{
+	font-size: 30px !important;
+	font-weight: 500 !important;
+	line-height: 40px !important;
+}
+
+.center-div{
+	display: table !important;
+	margin: 0 auto !important;
+}
+
+.button-inscription{
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+}
+
+.price-box{
+	box-shadow: 0px 0px 30px 0px rgba(40, 51, 57, 0.08);
+	padding: 5%!important;
+	margin-bottom: 5%!important;
+	webkit-box-shadow: 0 10px 24px 0 rgba(0,0,0,0.15) !important;
+}
+
+
+.vc_row li{
+	font-size: 20px !important;
+	font-weight: 300 !important;
+	line-height: 30px !important;
+}
+
+i.icon-default-style.icon-ok.extra-color-3::before{
+	line-height: 30px !important;
+}
+
+
+.wpb_tabs_nav span {
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 34px !important;
+
+}
