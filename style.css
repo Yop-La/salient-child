@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 2.0.8
+Version: 2.0.9
 */
 
 .orange{
@@ -71,12 +71,15 @@ div[data-style="default"] .toggle h3 a, div[data-style="default"] .toggle h3
     padding-bottom: 50px !important;
 	width:234px;
 	margin:auto;
+	
 }
 
 .fountainTextG{
 	color:rgb(0,0,0);
-	font-family:Arial;
-	font-size:30px;
+	
+	font-size: 40px !important;
+	font-weight: 600 !important;
+	line-height: 44px !important;
 	text-decoration:none;
 	font-weight:normal;
 	font-style:normal;
@@ -286,6 +289,14 @@ div.poptin-credit:nth-child(3) {
 .center-button {
 	margin: 0 auto;
 	display: table;
+}
+
+.spinner-style{
+	padding-top: 20% !important;
+	padding-bottom: 20% !important;
+	margin: 0 auto !important;
+	display: table !important;
+
 }
 
 .center-nf-button {

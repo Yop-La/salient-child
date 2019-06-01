@@ -1,0 +1,94 @@
+h1{
+	font-size: 54px !important;
+	font-weight: 800 !important;
+	line-height: 64px !important
+}
+
+h2{
+	font-size: 44px !important;
+	font-weight: 600 !important;
+	line-height: 54px !important
+}
+
+h3{
+	font-size: 34px !important;
+	font-weight: 600 !important;
+	line-height: 44px !important;
+}
+
+h3.testimonial-heading{
+	font-size: 20px !important;
+	font-weight: 900 !important;
+	line-height: 30px !important;
+
+}
+.testimonial-inner{
+	font-size: 17px !important;
+	font-weight: 300 !important;
+	line-height: 20px !important;
+}
+
+h4{
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 34px !important;
+}
+
+.vc_row{
+	font-size: 20px !important;
+	font-weight: 300 !important;
+	line-height: 30px !important;
+}
+
+.price{
+	font-size: 30px !important;
+	font-weight: 500 !important;
+	line-height: 40px !important;
+}
+
+.center-div{
+	display: table !important;
+	margin: 0 auto !important;
+}
+
+.button-inscription{
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+}
+
+.price-box{
+	box-shadow: 0px 0px 30px 0px rgba(40, 51, 57, 0.08);
+	padding: 5%!important;
+	margin-bottom: 5%!important;
+	webkit-box-shadow: 0 10px 24px 0 rgba(0,0,0,0.15) !important;
+}
+
+
+.vc_row li{
+	font-size: 20px !important;
+	font-weight: 300 !important;
+	line-height: 30px !important;
+}
+
+i.icon-default-style.icon-ok.extra-color-3::before{
+	line-height: 30px !important;
+}
+
+
+.wpb_tabs_nav span {
+	font-size: 24px !important;
+	font-weight: 500 !important;
+	line-height: 34px !important;
+
+}
+
+.divider-border {
+	margin-right: 12% !important;
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+}
+
+.testimony_paiement{
+	border: 1px solid #e1e9e1 !important;
+	margin-top: 5% !important;
+}

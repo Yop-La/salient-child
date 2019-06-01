@@ -1,4 +1,4 @@
-/* début css popup */
+/* dï¿½but css popup */
 .nf-breadcrumb {
 	padding: 10px;
 	background-color: #000000;
@@ -57,12 +57,7 @@
 
 .nf-field-element {
 	background-color: #fafafa !important;
-}
-
-.valider {
-	background-color: #81d742 !important;
-	padding: 30px !important;
-	font-size: 20px !important;
+	font-size: 15 px !important;
 }
 
 .nf-form-cont {
@@ -81,7 +76,7 @@
 
 /* fin css popup */
 
-/* customiser select choix élève */
+/* customiser select choix ï¿½lï¿½ve */
 .choisir-eleve {
 	-webkit-appearance: none !important;
 	-moz-appearance: none !important;
@@ -155,7 +150,7 @@ option:not(:checked) {
 	transition: .25s all ease !important;
 }
 
-/* customiser form selction eléève */
+/* customiser form selction elï¿½ï¿½ve */
 
 #nf-form-78-cont{
 	margin-bottom: 0px !important;
@@ -190,4 +185,26 @@ option:not(:checked) {
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1) !important;
 	margin: 5px !important;
 	max-width: 300px !important;
+}
+
+.nf-form-content .nf-field-container .field-wrap {
+    background-color: #fafafa !important;
+
+}
+
+.nf-form-content .nf-field-label label {
+    background-color: #fafafa !important;
+
+}
+
+.ninja-forms-field{
+	margin: 1% !important;
+}
+
+
+.valider {
+	background-color: #81d742 !important;
+	padding: 30px !important;
+	margin: 5% !important;
+	font-size: 20px !important;
 }
