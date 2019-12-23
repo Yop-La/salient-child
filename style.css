@@ -6,7 +6,7 @@ GitHub Theme URI: Yop-La/salient-child
 Author: My Name
 Author URI: http: //mysite.com/
 Template: salient
-Version: 2.0.9
+Version: 2.1.0
 */
 
 .orange{
@@ -390,3 +390,38 @@ div.poptin-credit:nth-child(3) {
 	font-size: 21px;
 	line-height: 8px;	
 }
+
+
+.simple-button{
+    border: none;
+    background-color: inherit;
+    padding: 1% !important;
+    margin-left: 2% !important;
+    margin-left: 2% !important;
+    color: white !important;
+    font-size: 16px;
+    display: inline-block;    
+}
+
+
+.bg-blue{
+    background: blue;
+}
+
+.bg-red{
+    background: red;
+}
+
+.bg-orange{
+    background: orange;
+}
+
+.bg-green{
+    background: #81d742;
+}	
+
+.cmd{
+	cursor: pointer;
+}
+
+
