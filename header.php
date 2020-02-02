@@ -387,38 +387,6 @@ if($perm_trans != 1 || $perm_trans == 1 && $bg_header == 'false' || $page_full_s
 
 <?php if(!empty($options['theme-skin']) && $options['theme-skin'] == 'ascend' || $headerFormat == 'left-header' ) { if($headerSearch != 'false') get_template_part('includes/header-search'); } ?> 
 
-<?php if($mobile_fixed != '1') { ?>
-
-	<div id="mobile-menu" data-mobile-fixed="<?php echo $mobile_fixed; ?>">
-		
-		<div class="container">
-			<ul>
-				<?php 
-					if($has_main_menu == 'true' && $mobile_fixed == 'false') {
-						
-					    wp_nav_menu( array('theme_location' => 'top_nav', 'menu' => 'Top Navigation Menu', 'container' => '', 'items_wrap' => '%3$s' ) ); 
-
-					    if($headerFormat == 'centered-menu' && $using_pr_menu == 'true' || $headerFormat == 'menu-left-aligned' && $using_pr_menu == 'true') {
-							wp_nav_menu( array('walker' => new Nectar_Arrow_Walker_Nav_Menu, 'theme_location' => 'top_nav_pull_right', 'container' => '', 'items_wrap' => '%3$s' ) );  
-						}
-						
-						echo '<li id="mobile-search">  
-						<form action="'.home_url().'" method="GET">
-				      		<input type="text" name="s" value="" placeholder="'.__('Search..', NECTAR_THEME_NAME) .'" />
-						</form> 
-						</li>';
-					}
-					else {
-						echo '<li><a href="">No menu assigned!</a></li>';
-					}
-				?>		
-			</ul>
-		</div>
-		
-	</div>
-
-<?php } ?>
-
 <div id="ajax-loading-screen" data-disable-fade-on-click="<?php echo (!empty($options['disable-transition-fade-on-click'])) ? $options['disable-transition-fade-on-click'] : '0' ; ?>" data-effect="<?php echo $page_transition_effect; ?>" data-method="<?php echo (!empty($options['transition-method'])) ? $options['transition-method'] : 'ajax' ; ?>">
 	
 	<?php if($page_transition_effect == 'horizontal_swipe') { ?>

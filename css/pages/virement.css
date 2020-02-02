@@ -1,0 +1,78 @@
+
+.item1 { grid-area: payout1; }
+.item2 { grid-area: payout2; }
+.item3 { grid-area: payout3; }
+
+.item4 { grid-area: transa1; }
+.item5 { grid-area: transa2; }
+.item6 { grid-area: transa3; }
+
+
+.item7 { grid-area: formula; }
+.item8 { grid-area: client; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'payout1 payout1 payout1 payout1 payout2 payout2 payout2 payout2 payout3 payout3 payout3 payout3'
+    'transa1 transa1 transa1 transa1 transa2 transa2 transa2 transa2 transa3 transa3 transa3 transa3'
+    'formula formula formula formula formula formula client client client client client client';
+  grid-gap: 10px;
+  background-color: #f39c12;
+  padding: 10px;
+  margin: 15px 15px 15px 15px !important;
+}
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.grid-title{
+  font-size: 20px;
+  margin : 5px;
+  line-height: 28px;	
+  font-weight: 900;
+}
+
+.grid-subtitle{
+  font-size: 17px;
+  line-height: 25px;	
+  font-weight: 500 !important;	
+}
+
+
+
+/* pour mettre en surbrillance */
+em{
+	font-style: normal;
+	font-weight: bold;
+	color: #00aeff;
+	background-color: #b3e7ff;
+}
+
+/* barre de recherche */
+
+#sbx-icon-search-13{
+    display: none;
+}
+
+.ais-Hits-item{
+	
+	list-style: none !important;
+	
+}
+
+
+.ais-Pagination li{
+	display: inline-block !important;
+	list-style: none !important;
+}
+
+.ais-RefinementList-list li{
+	list-style: none !important;	
+}

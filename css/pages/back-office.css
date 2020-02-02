@@ -65,7 +65,7 @@ em{
     display: none;
 }
 
-/* pour les bouttons de mise à jour dans le back office */
+/* pour les bouttons de mise ï¿½ jour dans le back office */
 span.update_button{
 	background-color: #81d742;
 	padding: 5px;
@@ -98,4 +98,22 @@ span.update_button{
 [contenteditable="true"].single-line * {
     display:inline;
     white-space:nowrap;
+}
+
+
+
+.ais-Hits-item{
+	
+	list-style: none !important;
+	
+}
+
+
+.ais-Pagination li{
+	display: inline-block !important;
+	list-style: none !important;
+}
+
+.ais-RefinementList-list li{
+	list-style: none !important;	
 }
