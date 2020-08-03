@@ -3,28 +3,7 @@
 
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-<meta name="google-site-verification" content="DkMXNbC10JUDZml9RgXOUDu9IDBz-6o3TlCtYE9qzDk" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WTBXPJ4');</script>
-<!-- End Google Tag Manager -->
-<!-- Global site tag (gtag.js) - Google AdWords: 865189739 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-865189739"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-865189739');
-</script>
-<!-- End global site tag (gtag.js) - Google AdWords: 865189739 -->
-<!-- Meta Tags -->
-<!-- Pixel PageLife | Obtenez Votre Pixel de Preuve Sociale Automatique pour Booster Vos Conversions pagelifemarketing.com -->
-<script>!function(e,t,n,a,i,s,c){s=t.createElement(n),c=t.getElementsByTagName(n)[0],s.async=1,s.src=a,c.parentNode.insertBefore(s,c),e.pagelife_data={id:"-L6zpT-ZsqyuHk97mw0i",timestamp:1*new Date,version:"1.1"}}(window,document,"script","https://s3.eu-west-2.amazonaws.com/pagelifemarketing.com/client_script.js?"+(new Date).getTime());</script>
-<!-- End Pixel PageLife -->
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <?php $options = get_nectar_theme_options(); ?>
